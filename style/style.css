@@ -1,0 +1,152 @@
+body {
+    background: linear-gradient(to right, rgb(14, 14, 14), rgb(7, 156, 64));
+    margin: 0;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(81, 206, 129);
+}
+
+a:hover {
+    text-decoration: underline;
+    color: rgb(92, 124, 104);
+}
+
+.login {
+    height: 100vh;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.card {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    width: 20rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    border-radius: 15px;
+    padding: 2%;
+    display: flex;
+
+    /* height: 50%; */
+    /* flex-direction: column; */
+    /* position: absolute;*/
+}
+
+    .titulo {
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 20%;
+    }
+
+    .button {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    button {
+        font-size: 20px;
+        border-radius: 10px;
+        background-color: rgb(9, 163, 68);
+        color: white;
+        font-weight: 700;
+        border: none;
+        min-width: 90%;
+        /* min-height: 20%; */
+    }
+
+    /* @media screen and (max-width: 830px) {
+        .card {
+            width: 30vh;
+        }
+    } */
+
+    button:hover {
+        border-radius: 25px;
+        background: linear-gradient(to right, rgb(71, 201, 168), rgb(71, 226, 133));
+        color: white(46, 46, 46);
+        transition: 100ms linear;
+
+        /* tentar descobrir como fazer elementos de uma div possuírem tamanhos definidos sem mudarem de lugar => SE FAZ UTILIZANDO R E M MEDIDA QUE PEGA COMO BASE O TAMANHO DA FONTE DO CARD*/
+
+        /* font-size: 2vh; */
+        /* font-weight: 500; */
+        /* height: 22%; */
+    }
+
+    .inputBox {
+        position: relative;
+    }
+
+    .inputUser {
+        background: none;
+        border: none;
+        border-bottom: 1px solid white;
+        outline: none;
+        color: white;
+        font-size: 15px;
+        width: 100%;
+        letter-spacing: 2px;
+    }
+
+    .labelInput {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        pointer-events: none;
+        transform: .5s;
+        transition: .1s;
+    }
+
+    .inputUser:focus~.labelInput,
+    .inputUser:valid~.labelInput {
+        top: -20px;
+        font-size: 12px;
+        color: rgb(9, 163, 68);
+        transition: .1s;
+    }
+
+    .register{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        font-size: 16px;
+        margin-top: 10%;
+    }
+
+    .posSenha{
+        text-align: center;
+        justify-content: center;
+        align-items: space-between;
+        display: flex;
+        font-size: 80%;
+        margin-top: 10%;
+    }
+
+    .nav-tabs{
+        border: none;
+    }
+    
+    .tabBotao{
+        color: white;
+    }
+    
+    .tabBotao:hover{
+        color: white;
+        background: none;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+        border-radius: 20px;
+    }
+
+    .tabBotao:active{
+        background-color: rgb(9, 163, 68);
+    }
